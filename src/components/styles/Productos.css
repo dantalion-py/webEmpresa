@@ -1,0 +1,84 @@
+/* Estilos Generales */
+.productos-container {
+    background-color: #1a1a2e;
+    color: #e5e7eb;
+    padding: 40px;
+  }
+  
+  .productos-header {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .productos-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #93c5fd; /* Azul claro */
+  }
+  
+  .productos-subtitle {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #d1d5db; /* Gris medio */
+  }
+  
+  /* Lista de Productos */
+  .productos-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+  }
+  
+  .producto-card {
+    background-color: #1f2937;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+  
+  .producto-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  .producto-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #93c5fd;
+    margin-top: 15px;
+  }
+  
+  .producto-description {
+    font-size: 16px;
+    color: #d1d5db;
+    margin-top: 10px;
+    line-height: 1.6;
+  }
+  
+  .producto-button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #93c5fd;
+    color: #1a1a2e;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .producto-button:hover {
+    background-color: #60a5fa;
+  }
+  
+  /* Footer */
+  .productos-footer {
+    text-align: center;
+    font-size: 14px;
+    color: #9ca3af; /* Gris claro */
+    margin-top: 50px;
+  }
+  

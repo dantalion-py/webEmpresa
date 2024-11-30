@@ -1,0 +1,48 @@
+/* General Navbar Styles */
+.navbar-container {
+    background-color: #111827; /* Fondo oscuro */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-link {
+    color: #e5e7eb; /* Gris claro */
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  /* Hover effects */
+  .navbar-link:hover {
+    color: #93c5fd; /* Azul claro */
+    transform: scale(1.05); /* Efecto de escala para interactividad */
+  }
+  
+  /* Active Link Styling */
+  .navbar-link:active {
+    color: #e5e7eb; /* Gris claro */
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .navbar-links {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .navbar-link {
+      margin-bottom: 10px;
+    }
+  }
+  

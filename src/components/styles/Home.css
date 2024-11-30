@@ -1,0 +1,75 @@
+/* General Styles */
+.home-container {
+    background-color: #1a1a2e;
+    color: #e5e7eb;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  /* Header */
+  .home-header {
+    margin-bottom: 50px;
+  }
+  
+  .home-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #93c5fd; /* Azul claro */
+  }
+  
+  .home-subtitle {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #d1d5db; /* Gris medio */
+  }
+  
+  .home-button {
+    padding: 12px 24px;
+    background-color: #93c5fd;
+    color: #1a1a2e;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .home-button:hover {
+    background-color: #60a5fa; /* Azul más claro */
+  }
+  
+  /* Features Section */
+  .home-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+  }
+  
+  .feature-card {
+    background-color: #1f2937;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  .feature-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #93c5fd;
+  }
+  
+  .feature-description {
+    font-size: 16px;
+    color: #d1d5db;
+    margin-top: 10px;
+  }
+  
+  /* Footer */
+  .home-footer {
+    margin-top: 50px;
+    font-size: 14px;
+    color: #9ca3af; /* Gris claro */
+  }
+  
