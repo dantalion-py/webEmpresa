@@ -1,75 +1,147 @@
 /* General Styles */
+body {
+  margin: 0;
+  font-family: 'Comic Sans MS', sans-serif; /* Cambia a una fuente más lúdica */
+  background-color: #87CEEB; /* Azul cielo - Fondo marino */
+  color: #2C3E50; /* Azul oscuro */
+  line-height: 1.6;
+}
+
+/* Container */
 .home-container {
-    background-color: #1a1a2e;
-    color: #e5e7eb;
-    padding: 40px;
-    text-align: center;
-  }
-  
-  /* Header */
-  .home-header {
-    margin-bottom: 50px;
-  }
-  
-  .home-title {
-    font-size: 36px;
-    font-weight: bold;
-    color: #93c5fd; /* Azul claro */
-  }
-  
-  .home-subtitle {
-    font-size: 18px;
-    margin-top: 10px;
-    color: #d1d5db; /* Gris medio */
-  }
-  
-  .home-button {
-    padding: 12px 24px;
-    background-color: #93c5fd;
-    color: #1a1a2e;
-    border: none;
-    border-radius: 6px;
-    font-size: 16px;
-    cursor: pointer;
-    margin-top: 20px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .home-button:hover {
-    background-color: #60a5fa; /* Azul más claro */
-  }
-  
-  /* Features Section */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header Section */
+.home-header {
+  background: linear-gradient(135deg, #ebf13a, #0fa3f3); /* Amarillo y naranja - Sol y coral */
+  text-align: center;
+  padding: 4rem 2rem;
+  border-bottom: 10px solid #F4A460; /* Simula arena */
+}
+
+.home-title {
+  font-size: 3rem;
+  color: #ff71dc; /* Verde azulado - Océano */
+  margin: 0 0 1rem;
+  text-shadow: 2px 2px 4px #2E8B57; /* Sombra tipo coral */
+}
+
+.home-title strong {
+  color: #fbff00; /* Rojo tomate - Alegre y llamativo */
+}
+
+.home-subtitle {
+  font-size: 1.5rem;
+  color: #FFFFFF; /* Blanco puro */
+  margin-bottom: 2rem;
+}
+
+.home-button {
+  background-color: #32CD32; /* Verde lima - Frescura marina */
+  color: #FFFFFF;
+  border: none;
+  padding: 1rem 2.5rem;
+  font-size: 1.2rem;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Simula una profundidad marina */
+  transition: all 0.3s ease;
+}
+
+.home-button:hover {
+  background-color: #FF6347; /* Rojo tomate */
+  color: #87CEEB; /* Azul cielo */
+  transform: scale(1.1);
+}
+
+/* Features Section */
+.home-features {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 3rem 2rem;
+  background: linear-gradient(to bottom, #9bced5, #5bff7c); /* Simula el agua y arena */
+  border-top: 10px solid #F4A460; /* Frontera de arena */
+}
+
+.feature-card {
+  background: #FFFFFF; /* Blanco limpio */
+  border-radius: 15px;
+  padding: 2rem;
+  text-align: center;
+  flex: 1;
+  max-width: 300px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Sombras más marcadas */
+  border: 3px solid #2E8B57; /* Verde coral */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px) rotate(3deg);
+  box-shadow: 0 12px 18px rgba(0, 0, 0, 0.3);
+}
+
+.feature-title {
+  font-size: 1.8rem;
+  color: #040404; /* Coral brillante */
+  margin-bottom: 1rem;
+}
+
+.feature-description {
+  color: #2C3E50; /* Azul oscuro */
+  font-size: 1.1rem;
+}
+
+/* Footer Section */
+.home-footer {
+  background-color: #F4A460; /* Arena */
+  text-align: center;
+  padding: 1rem;
+  font-size: 1rem;
+  color: #2C3E50;
+  border-top: 5px solid #FFD700; /* Detalle brillante */
+  margin-top: auto;
+}
+
+.home-footer p {
+  margin: 0;
+}
+
+/* Bubbles Effect (Optional for Fun) */
+.home-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://via.placeholder.com/50x50.png?text=%F0%9F%92%A6'); /* Simula burbujas */
+  background-size: 80px;
+  background-repeat: repeat;
+  opacity: 0.1;
+  z-index: -1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
   .home-features {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-    margin-bottom: 50px;
+    flex-direction: column;
+    align-items: center;
   }
-  
+
   .feature-card {
-    background-color: #1f2937;
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    max-width: none;
+    width: 100%;
   }
-  
-  .feature-title {
-    font-size: 24px;
-    font-weight: bold;
-    color: #93c5fd;
+
+  .home-title {
+    font-size: 2.5rem;
   }
-  
-  .feature-description {
-    font-size: 16px;
-    color: #d1d5db;
-    margin-top: 10px;
+
+  .home-subtitle {
+    font-size: 1.1rem;
   }
-  
-  /* Footer */
-  .home-footer {
-    margin-top: 50px;
-    font-size: 14px;
-    color: #9ca3af; /* Gris claro */
-  }
-  
+}

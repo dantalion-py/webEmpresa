@@ -25,8 +25,6 @@ const Navbar = () => {
             Dashboard
           </Link>
         </li>
- 
-  
       </ul>
     </nav>
   );

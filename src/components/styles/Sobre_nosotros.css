@@ -1,87 +1,132 @@
 /* General Styles */
+body {
+  margin: 0;
+  font-family: 'Comic Sans MS', sans-serif; /* Estilo lúdico */
+  background-color: #87CEEB; /* Azul cielo - Fondo marino */
+  color: #2C3E50; /* Azul oscuro */
+  line-height: 1.6;
+}
+
+/* Container */
 .aboutus-container {
-    background-color: #1a1a2e;
-    color: #e5e7eb;
-    padding: 40px;
-  }
-  
-  .aboutus-header {
-    text-align: center;
-    margin-bottom: 50px;
-  }
-  
-  .aboutus-title {
-    font-size: 36px;
-    font-weight: bold;
-    color: #93c5fd; /* Azul claro */
-  }
-  
-  .aboutus-subtitle {
-    font-size: 18px;
-    margin-top: 10px;
-    color: #d1d5db; /* Gris medio */
-  }
-  
-  /* Mission Section */
-  .aboutus-mission {
-    margin-bottom: 40px;
-  }
-  
-  .section-title {
-    font-size: 28px;
-    font-weight: bold;
-    color: #93c5fd; /* Azul claro */
-    margin-bottom: 10px;
-  }
-  
-  .section-description {
-    font-size: 18px;
-    color: #d1d5db;
-    line-height: 1.6;
-  }
-  
-  /* Team Section */
-  .aboutus-team {
-    margin-bottom: 50px;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header Section */
+.aboutus-header {
+  background: linear-gradient(135deg,  #ebf13a, #0fa3f3); /* Amarillo y naranja - Sol y coral */
+  text-align: center;
+  padding: 4rem 2rem;
+  border-bottom: 10px solid #F4A460; /* Simula arena */
+}
+
+.aboutus-title {
+  font-size: 3rem;
+  color: #e3f938; /* Verde azulado - Océano */
+  margin: 0 0 1rem;
+  text-shadow: 2px 2px 4px #2E8B57; /* Sombra tipo coral */
+}
+
+.aboutus-subtitle {
+  font-size: 1.5rem;
+  color: #FFFFFF; /* Blanco puro */
+  margin-bottom: 2rem;
+}
+
+/* Mission Section */
+.aboutus-mission {
+  padding: 3rem 2rem;
+  background: #87CEEB; /* Simula el agua y la arena */
+  border-top: 10px solid #F4A460; /* Borde de arena */
+  text-align: center;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  color: #383838; /* Coral brillante */
+  margin-bottom: 1rem;
+}
+
+.section-description {
+  font-size: 1rem;
+  color: #2C3E50; /* Azul oscuro */
+}
+
+/* Team Section */
+.aboutus-team {
+  padding: 3rem 2rem;
+  background: linear-gradient(to bottom, #eb87e9, #1aff00); /* Simula el agua y la arena */
+  text-align: center;
+}
+
+.team-grid {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.team-member {
+  background-color: #F4A460; /* Arena */
+  border-radius: 15px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  max-width: 250px;
+  flex: 1;
+  margin: 1rem;
+  border: 3px solid #2E8B57; /* Coral */
+}
+
+.team-member:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 18px rgba(0, 0, 0, 0.3);
+}
+
+.team-member-image {
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  width: 100px;
+  height: 100px;
+}
+
+.team-member-name {
+  font-size: 1.2rem;
+  color: #000000; /* Coral */
+  margin-bottom: 0.5rem;
+}
+
+.team-member-role {
+  font-size: 1rem;
+  color: #2C3E50; /* Azul oscuro */
+}
+
+/* Footer Section */
+.aboutus-footer {
+  background-color: #F4A460; /* Arena */
+  text-align: center;
+  padding: 1rem;
+  font-size: 1rem;
+  color: #2C3E50;
+  border-top: 5px solid #FFD700; /* Detalle brillante */
+  margin-top: auto;
+}
+
+.aboutus-footer p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
   .team-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-    text-align: center;
+    flex-direction: column;
+    align-items: center;
   }
-  
+
   .team-member {
-    background-color: #1f2937;
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    max-width: 300px;
   }
-  
-  .team-member-image {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-  }
-  
-  .team-member-name {
-    font-size: 20px;
-    font-weight: bold;
-    color: #93c5fd;
-    margin-top: 10px;
-  }
-  
-  .team-member-role {
-    font-size: 16px;
-    color: #d1d5db;
-  }
-  
-  /* Footer */
-  .aboutus-footer {
-    text-align: center;
-    font-size: 14px;
-    color: #9ca3af; /* Gris claro */
-  }
-  
+}

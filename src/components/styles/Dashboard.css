@@ -1,139 +1,168 @@
 /* General Styles */
 body {
-    margin: 0;
-    font-family: 'Arial', sans-serif;
-    color: #e5e7eb; /* Gris claro */
-    background-color: #1a1a2e; /* Fondo oscuro principal */
-  }
-  
+  margin: 0;
+  font-family: 'Comic Sans MS', sans-serif; /* Fuente divertida para un toque lúdico */
+  background-color: #87CEEB; /* Azul cielo - Fondo marino */
+  color: #2C3E50; /* Azul oscuro */
+  line-height: 1.6;
+}
+
+/* Container */
+.dashboard-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background-color: #242520; /* Naranja brillante - como el coral */
+  padding: 2rem;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidebar-title {
+  font-size: 2.5rem;
+  color: #ffffff; /* Amarillo brillante - Sol */
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-item {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.menu-item:hover {
+  color: #ffffff; /* Amarillo brillante */
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  background-color: #4f4e4e; /* Fondo claro para contrastar con el sidebar */
+  padding: 2rem;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #00ffbb; /* Amarillo brillante - Fondo de cabecera */
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.header-title {
+  font-size: 2.5rem;
+  color: #000000; /* Naranja */
+}
+
+.search-input {
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  width: 250px;
+}
+
+.search-input::placeholder {
+  color: #7F8C8D; /* Gris suave */
+}
+.section-title{
+  color: #000000;
+}
+/* Stats Grid */
+.dashboard-section {
+  margin-bottom: 3rem;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  justify-items: center;
+}
+
+.stats-card {
+  background-color: #FFFFFF;
+  padding: 2rem;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stats-card:hover {
+  transform: translateY(-10px); /* Desplazamiento al hacer hover */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.stats-title {
+  font-size: 1rem;
+  color: #040404; /* Naranja brillante */
+}
+
+.stats-value {
+  font-size: 2rem;
+  color: #2C3E50; /* Azul oscuro */
+  font-weight: bold;
+}
+
+/* Recent Activities */
+.activity-list {
+  background-color: #FFFFFF;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.activity-item {
+  margin-bottom: 1.5rem;
+}
+
+.activity-item p {
+  font-size: 1.1rem;
+  color: #000000;
+}
+
+.activity-time {
+  font-size: 0.9rem;
+  color: #000000; /* Gris suave */
+}
+
+.activity-item:last-child {
+  margin-bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
   .dashboard-container {
-    display: flex;
-    height: 100vh;
-  }
-  
-  /* Sidebar */
-  .sidebar {
-    width: 240px;
-    background-color: #111827; /* Oscuro más intenso */
-    color: #e5e7eb;
-    padding: 20px;
-    display: flex;
     flex-direction: column;
   }
-  
-  .sidebar-title {
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: #f9fafb;
-  }
-  
-  .sidebar-menu {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .menu-item {
-    font-size: 16px;
-    padding: 10px 0;
-    cursor: pointer;
-    border-bottom: 1px solid #1f2937;
-    color: #d1d5db; /* Gris medio */
-  }
-  
-  .menu-item:hover {
-    color: #93c5fd; /* Azul claro */
-    text-decoration: underline;
-  }
-  
-  /* Main Content */
-  .main-content {
-    flex: 1;
-    padding: 20px;
-    background-color: #1a1a2e;
-    overflow-y: auto;
-  }
-  
-  /* Header */
-  .dashboard-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  
-  .header-title {
-    font-size: 24px;
-    font-weight: bold;
-    color: #e5e7eb;
-  }
-  
-  .search-input {
-    padding: 8px 12px;
-    border: 1px solid #374151;
-    background-color: #111827; /* Fondo oscuro */
-    border-radius: 6px;
-    color: #e5e7eb;
-    outline: none;
-    width: 200px;
-    transition: border-color 0.2s;
-  }
-  
-  .search-input:focus {
-    border-color: #93c5fd; /* Azul claro */
-  }
-  
-  /* Stats Section */
+
   .stats-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
+    grid-template-columns: 1fr 1fr;
   }
-  
+
   .stats-card {
-    background-color: #1f2937; /* Fondo de tarjetas oscuro */
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    text-align: center;
+    max-width: 90%;
+    margin: 0 auto;
   }
-  
-  .stats-title {
-    font-size: 16px;
-    margin-bottom: 10px;
-    color: #d1d5db;
+
+  .search-input {
+    width: 100%;
   }
-  
-  .stats-value {
-    font-size: 24px;
-    font-weight: bold;
-    color: #f9fafb;
-  }
-  
-  /* Activities Section */
-  .activity-list {
-    background-color: #1f2937;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-    padding: 20px;
-  }
-  
-  .activity-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 0;
-    border-bottom: 1px solid #374151;
-    color: #d1d5db;
-  }
-  
-  .activity-item:last-child {
-    border-bottom: none;
-  }
-  
-  .activity-time {
-    font-size: 12px;
-    color: #9ca3af;
-  }
-  
+}
