@@ -12,75 +12,89 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  position: relative;
+  overflow: hidden;
 }
 
 /* Header Section */
 .productos-header {
-  background: linear-gradient(135deg,  #ebf13a, #0fa3f3); /* Amarillo y naranja - Sol y coral */
+  background: linear-gradient(135deg, #ebf13a, #0fa3f3); /* Amarillo y naranja - Sol y coral */
   text-align: center;
-  padding: 4rem 2rem;
-  border-bottom: 10px solid #F4A460; /* Borde de arena */
+  padding: 5rem 2rem; /* Más padding para mayor presencia */
+  border-bottom: 15px solid #F4A460; /* Borde de arena */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .productos-title {
-  font-size: 3rem;
-  color: #f8f40d; /* Verde azulado - Océano */
+  font-size: 3.5rem; /* Título más grande */
+  color: #2C3E50; /* Verde azulado - Océano */
   margin: 0 0 1rem;
-  text-shadow: 2px 2px 4px #2E8B57; /* Sombra tipo coral */
+  text-shadow: 2px 2px 5px #2E8B57; /* Sombra tipo coral */
 }
 
 .productos-subtitle {
-  font-size: 1.5rem;
-  color: #FFFFFF; /* Blanco puro */
+  font-size: 1.8rem;
+  color: #2C3E50; /* Blanco puro */
   margin-bottom: 2rem;
+  font-weight: 300;
 }
 
 /* Productos List */
 .productos-list {
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  gap: 3rem;
   padding: 3rem 2rem;
   flex-wrap: wrap;
   background: linear-gradient(to bottom, #eb87e9, #1aff00); /* Fondo agua y arena */
   border-top: 10px solid #F4A460; /* Borde de arena */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Producto Card */
 .producto-card {
   background-color: #FFFFFF; /* Blanco limpio */
-  border-radius: 15px;
-  padding: 2rem;
+  border-radius: 20px; /* Bordes más redondeados */
+  padding: 2.5rem;
   text-align: center;
   flex: 1;
-  max-width: 300px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  max-width: 320px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Sombra suave */
   border: 3px solid #2E8B57; /* Coral */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animación al hover */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease; /* Animación suave */
   margin: 1rem;
 }
 
 .producto-card:hover {
-  transform: translateY(-10px) rotate(3deg); /* Desplazamiento y rotación */
-  box-shadow: 0 12px 18px rgba(0, 0, 0, 0.3); /* Sombra más marcada */
+  transform: translateY(-15px) rotate(5deg); /* Desplazamiento y rotación */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Sombra más fuerte */
+  filter: brightness(1.05); /* Añadir brillo al hover */
 }
 
 .producto-image {
   width: 100%;
-  border-radius: 10px;
+  height: auto;
+  border-radius: 15px;
   margin-bottom: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.producto-card:hover .producto-image {
+  transform: scale(1.1); /* Escala de imagen al hover */
 }
 
 .producto-name {
-  font-size: 1.5rem;
-  color: #000000; /* Coral brillante */
+  font-size: 1.7rem;
+  color: #2C3E50; /* Color del nombre */
   margin-bottom: 1rem;
+  font-weight: 600;
 }
 
 .producto-description {
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: #2C3E50; /* Azul oscuro */
   margin-bottom: 1.5rem;
+  line-height: 1.5;
 }
 
 .producto-button {
@@ -93,23 +107,26 @@ body {
   cursor: pointer;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra suave */
   transition: all 0.3s ease;
+  font-weight: 500;
 }
 
 .producto-button:hover {
   background-color: #FF6347; /* Rojo tomate */
   color: #87CEEB; /* Azul cielo */
   transform: scale(1.1); /* Agranda el botón */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3); /* Sombra más profunda */
 }
 
 /* Footer Section */
 .productos-footer {
   background-color: #F4A460; /* Arena */
   text-align: center;
-  padding: 1rem;
-  font-size: 1rem;
+  padding: 1.5rem;
+  font-size: 1.2rem;
   color: #2C3E50;
   border-top: 5px solid #FFD700; /* Detalle brillante */
   margin-top: auto;
+  font-weight: 300;
 }
 
 .productos-footer p {

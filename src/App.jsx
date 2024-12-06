@@ -13,6 +13,10 @@ function App() {
 
   return (
     <>
+     <audio autoPlay loop>
+        <source src="/song/theme.mp3" type="audio/mp3" />
+        Tu navegador no soporta el elemento de audio.
+      </audio>
     <Router>
       <Navbar/>
       <Routes>

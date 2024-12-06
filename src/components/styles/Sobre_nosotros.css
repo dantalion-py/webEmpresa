@@ -1,9 +1,9 @@
 /* General Styles */
 body {
   margin: 0;
-  font-family: 'Comic Sans MS', sans-serif; /* Estilo lúdico */
-  background-color: #87CEEB; /* Azul cielo - Fondo marino */
-  color: #2C3E50; /* Azul oscuro */
+  font-family: 'Roboto', sans-serif; /* Tipografía moderna */
+  background-color: #f2f2f2; /* Fondo neutro */
+  color: #333333; /* Color de texto oscuro */
   line-height: 1.6;
 }
 
@@ -12,106 +12,125 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  overflow: hidden;
 }
 
 /* Header Section */
 .aboutus-header {
-  background: linear-gradient(135deg,  #ebf13a, #0fa3f3); /* Amarillo y naranja - Sol y coral */
+  background: linear-gradient(135deg, #fc5c7d, #6a82fb); /* Gradiente vibrante */
   text-align: center;
-  padding: 4rem 2rem;
-  border-bottom: 10px solid #F4A460; /* Simula arena */
+  padding: 6rem 2rem;
+  color: #fff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  border-bottom: 4px solid #f8b400;
 }
 
 .aboutus-title {
-  font-size: 3rem;
-  color: #e3f938; /* Verde azulado - Océano */
-  margin: 0 0 1rem;
-  text-shadow: 2px 2px 4px #2E8B57; /* Sombra tipo coral */
+  font-size: 3.5rem;
+  margin: 0;
+  font-weight: 700;
+  text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .aboutus-subtitle {
-  font-size: 1.5rem;
-  color: #FFFFFF; /* Blanco puro */
-  margin-bottom: 2rem;
+  font-size: 1.3rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin-top: 1rem;
+  font-weight: 300;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Mission Section */
 .aboutus-mission {
-  padding: 3rem 2rem;
-  background: #87CEEB; /* Simula el agua y la arena */
-  border-top: 10px solid #F4A460; /* Borde de arena */
+  background: #fff;
+  padding: 5rem 2rem;
   text-align: center;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
 }
 
 .section-title {
-  font-size: 1.8rem;
-  color: #383838; /* Coral brillante */
-  margin-bottom: 1rem;
+  font-size: 2.2rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
 }
 
 .section-description {
-  font-size: 1rem;
-  color: #2C3E50; /* Azul oscuro */
+  font-size: 1.2rem;
+  color: #666;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.8;
+  text-align: center;
 }
 
 /* Team Section */
 .aboutus-team {
-  padding: 3rem 2rem;
-  background: linear-gradient(to bottom, #eb87e9, #1aff00); /* Simula el agua y la arena */
+  background: linear-gradient(135deg, #e0eafc, #cfdef3);
+  padding: 4rem 2rem;
   text-align: center;
 }
 
 .team-grid {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
   gap: 2rem;
-  justify-content: center;
-  flex-wrap: wrap;
+  justify-items: center;
 }
 
 .team-member {
-  background-color: #F4A460; /* Arena */
-  border-radius: 15px;
+  background-color: #ffffff;
+  border-radius: 12px;
   padding: 2rem;
   text-align: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
-  max-width: 250px;
-  flex: 1;
-  margin: 1rem;
-  border: 3px solid #2E8B57; /* Coral */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+  position: relative;
+  transform: translateY(0);
 }
 
 .team-member:hover {
   transform: translateY(-10px);
-  box-shadow: 0 12px 18px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
 }
 
 .team-member-image {
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
-  margin-bottom: 1rem;
-  width: 100px;
-  height: 100px;
+  margin-bottom: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+.team-member-image:hover {
+  transform: scale(1.1);
 }
 
 .team-member-name {
-  font-size: 1.2rem;
-  color: #000000; /* Coral */
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
   margin-bottom: 0.5rem;
 }
 
 .team-member-role {
   font-size: 1rem;
-  color: #2C3E50; /* Azul oscuro */
+  color: #888;
+  font-weight: 300;
 }
 
 /* Footer Section */
 .aboutus-footer {
-  background-color: #F4A460; /* Arena */
+  background-color: #333;
+  color: #fff;
   text-align: center;
-  padding: 1rem;
+  padding: 2rem 0;
   font-size: 1rem;
-  color: #2C3E50;
-  border-top: 5px solid #FFD700; /* Detalle brillante */
-  margin-top: auto;
+  border-top: 5px solid #f8b400;
 }
 
 .aboutus-footer p {
@@ -121,12 +140,31 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .team-grid {
-    flex-direction: column;
-    align-items: center;
+  .aboutus-header {
+    padding: 4rem 2rem;
+  }
+
+  .aboutus-title {
+    font-size: 2.5rem;
+  }
+
+  .aboutus-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .section-description {
+    font-size: 1rem;
   }
 
   .team-member {
-    max-width: 300px;
+    max-width: 100%;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr 1fr;
   }
 }

@@ -1,11 +1,26 @@
 /* General Styles */
 body {
   margin: 0;
-  font-family: 'Comic Sans MS', sans-serif; /* Cambia a una fuente más lúdica */
-  background-color: #87CEEB; /* Azul cielo - Fondo marino */
+  font-family: 'Comic Sans MS', sans-serif; /* Fuente más lúdica */
+  background: linear-gradient(45deg, #ee2626, #7d7bff, #f7ff81); /* Gradiente con varios colores */
+  background-size: 300% 300%;
   color: #2C3E50; /* Azul oscuro */
   line-height: 1.6;
+  animation: backgroundMove 10s ease infinite; /* Animación de movimiento */
 }
+
+@keyframes backgroundMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 
 /* Container */
 .home-container {
@@ -16,7 +31,7 @@ body {
 
 /* Header Section */
 .home-header {
-  background: linear-gradient(135deg, #ebf13a, #0fa3f3); /* Amarillo y naranja - Sol y coral */
+  background: linear-gradient(135deg, #1E90FF, #FFD700); /* Amarillo y naranja - Sol y coral */
   text-align: center;
   padding: 4rem 2rem;
   border-bottom: 10px solid #F4A460; /* Simula arena */
@@ -24,19 +39,21 @@ body {
 
 .home-title {
   font-size: 3rem;
-  color: #ff71dc; /* Verde azulado - Océano */
+  color: #2C3E50; /* Verde azulado - Océano */
   margin: 0 0 1rem;
   text-shadow: 2px 2px 4px #2E8B57; /* Sombra tipo coral */
 }
 
 .home-title strong {
-  color: #fbff00; /* Rojo tomate - Alegre y llamativo */
+  color: #09b0ce; /* Rojo tomate - Alegre y llamativo */
 }
 
 .home-subtitle {
   font-size: 1.5rem;
-  color: #FFFFFF; /* Blanco puro */
+  color: #2C3E50; /* Blanco puro */
   margin-bottom: 2rem;
+  text-align: left;
+
 }
 
 .home-button {
@@ -63,7 +80,7 @@ body {
   justify-content: center;
   gap: 1.5rem;
   padding: 3rem 2rem;
-  background: linear-gradient(to bottom, #9bced5, #5bff7c); /* Simula el agua y arena */
+  background: linear-gradient(to bottom, #FFD700, #1E90FF); /* Simula el agua y arena */
   border-top: 10px solid #F4A460; /* Frontera de arena */
 }
 
@@ -144,4 +161,4 @@ body {
   .home-subtitle {
     font-size: 1.1rem;
   }
-}
+} 

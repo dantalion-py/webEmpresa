@@ -1,9 +1,12 @@
+// Home.js
+
 import React from 'react';
 import './styles/Home.css';
 
 const Home = () => {
   return (
     <div className="home-container">
+ 
       <header className="home-header">
         <h1 className="home-title">
           Bienvenido a <strong>BikiniBottom</strong>
@@ -36,7 +39,7 @@ const Home = () => {
       </section>
 
       <footer className="home-footer">
-        <p>© 2024 DevPanel. Todos los derechos reservados.</p>
+        <p>© 2024 BikiniBottom. Todos los derechos reservados.</p>
       </footer>
     </div>
   );
