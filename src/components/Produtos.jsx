@@ -15,17 +15,17 @@ const Productos = () => {
     {
       name: 'Dashboard Union',
       description: 'Gestión unificada y potente para optimizar tus proyectos y operaciones.',
-      image: 'https://media.discordapp.net/attachments/1233288974177407026/1314463708679766027/2024-12-06_01-26.png?ex=6753dd39&is=67528bb9&hm=898d6532af1d7b473602e052fd04e02d4a87938f2d38044c5ce2e1508c170407&=&format=webp&quality=lossless',
+      image: '/images/2.png',
     },
     {
       name: 'AmazingAstr',
       description: 'Eficiencia y rendimiento en una herramienta innovadora y confiable.',
-      image: 'https://media.discordapp.net/attachments/1233288974177407026/1314463709007052810/2024-12-06_01-28.png?ex=6753dd39&is=67528bb9&hm=ffd4e3a0691e0313d66d7efe9e540cc138107b8f10df6ffb0b2e48e502c38755&=&format=webp&quality=lossless&width=845&height=468',
+      image: '/images/3.png',
     },
     {
       name: 'YourLife',
       description: 'Tu compañera ideal para monitorear y mejorar tu rutina de ejercicios desde cualquier lugar.',
-      image: 'https://media.discordapp.net/attachments/1233288974177407026/1314464069100765236/2024-12-06_01-30.png?ex=6753dd8f&is=67528c0f&hm=ccec5a9abd52118c99e058ed04c89d62774a23daf79b65d5fdde83ec2006f2ef&=&format=webp&quality=lossless&width=550&height=303',
+      image: '/images/4.png',
     },
   ];
 
