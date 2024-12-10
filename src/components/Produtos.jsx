@@ -1,6 +1,15 @@
 import React from 'react';
 import './styles/Productos.css';
 
+const ProductoCard = ({ name, description, image }) => (
+  <div className="producto-card">
+    <img src={image} alt={name} className="producto-image" />
+    <h3 className="producto-name">{name}</h3>
+    <p className="producto-description">{description}</p>
+    <button className="producto-button">Ver Más</button>
+  </div>
+);
+
 const Productos = () => {
   const productos = [
     {
@@ -28,13 +37,13 @@ const Productos = () => {
       </header>
 
       <section className="productos-list">
-        {productos.map((producto, index) => (
-          <div key={index} className="producto-card">
-            <img src={producto.image} alt={producto.name} className="producto-image" />
-            <h3 className="producto-name">{producto.name}</h3>
-            <p className="producto-description">{producto.description}</p>
-            <button className="producto-button">Ver Más</button>
-          </div>
+        {productos.map(({ name, description, image }) => (
+          <ProductoCard 
+            key={name} 
+            name={name} 
+            description={description} 
+            image={image} 
+          />
         ))}
       </section>
 
