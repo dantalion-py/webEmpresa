@@ -38,7 +38,7 @@ const Dashboard = () => {
             </div>
             <div className="stats-card">
               <h3 className="stats-title">Team Members</h3>
-              <p className="stats-value">8</p>
+              <p className="stats-value">7</p>
             </div>
             <div className="stats-card">
               <h3 className="stats-title">New Messages</h3>
@@ -51,15 +51,15 @@ const Dashboard = () => {
           <h2 className="section-title">Recent Activities</h2>
           <div className="activity-list">
             <div className="activity-item">
-              <p><strong>John</strong> added a new project: *API Redesign*</p>
+              <p><strong>Johan Beltran</strong> added a new project: *API Redesign*</p>
               <span className="activity-time">2 hours ago</span>
             </div>
             <div className="activity-item">
-              <p><strong>Sarah</strong> completed a task: *Database Migration*</p>
+              <p><strong>Carla Flores</strong> completed a task: *Database Migration*</p>
               <span className="activity-time">5 hours ago</span>
             </div>
             <div className="activity-item">
-              <p><strong>Mark</strong> joined the team.</p>
+              <p><strong>Israel Flores</strong> joined the team.</p>
               <span className="activity-time">1 day ago</span>
             </div>
           </div>

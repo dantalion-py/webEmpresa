@@ -35,22 +35,16 @@ const SobreNosotros = () => {
       image: 'https://media.discordapp.net/attachments/1233288974177407026/1314457837023264829/WhatsApp_Image_2024-12-04_at_9.48.52_PM.jpeg?ex=6753d7c1&is=67528641&hm=7591279ed744044323673c2bb4fb0172c5a7b9a1d5bb833ff913637ed1cda251&=&format=webp&width=536&height=468'
     },
     {
-      name: 'Paola Pérez',
-      role: 'Diseñadora UX/UI',
+      name: 'Ruven Sanchez',
+      role: 'Diseñador UX/UI',
       description: 'Especialista en la creación de experiencias digitales excepcionales, trabajando para que nuestros productos sean intuitivos y atractivos.',
-      image: 'https://via.placeholder.com/150'
+      image: 'https://media.discordapp.net/attachments/1233288974177407026/1315854249388937256/IMG_20241208_203532.jpg?ex=6758ec44&is=67579ac4&hm=58ea54349e2b7917a5665ebea620e7e39c99b9b326e92cb827b0de7c8a6f22b3&=&format=webp&width=315&height=468'
     },
     {
-      name: 'Carlos Rodríguez',
+      name: 'Israel Flores',
       role: 'Desarrollador Backend',
       description: 'Con una profunda pasión por la tecnología, se encarga de la infraestructura y el desarrollo de la lógica que hace funcionar nuestros productos.',
-      image: 'https://via.placeholder.com/150'
-    },
-    {
-      name: 'Marta Sánchez',
-      role: 'Soporte Técnico',
-      description: 'Siempre dispuesta a ayudar, proporciona soporte técnico excepcional a nuestros clientes y asegura el buen funcionamiento de nuestros sistemas.',
-      image: 'https://via.placeholder.com/150'
+      image: 'https://cdn.discordapp.com/attachments/1233288974177407026/1315855178972528761/wallhaven-2krgog_1920x1080.png?ex=6758ed22&is=67579ba2&hm=14b6193945a0a2de9c456bde5f1e317274fabe93a447ee1898d586b2b604afb0&'
     }
     
   ];
@@ -97,7 +91,7 @@ const SobreNosotros = () => {
 
       {/* Footer Section */}
       <footer className="aboutus-footer">
-        <p>© 2024 DevPanel. Todos los derechos reservados.</p>
+        <p>© 2024 BikiniBottom. Todos los derechos reservados.</p>
       </footer>
     </div>
   );
